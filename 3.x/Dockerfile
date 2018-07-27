@@ -1,6 +1,6 @@
-FROM alpine:latest 
-MAINTAINER DoveConviene <server@doveconviene.com> 
-RUN apk add --update --no-cache python3 openssh-client && \
+FROM alpine:latest
+MAINTAINER DoveConviene <server@doveconviene.com>
+RUN apk add --update --no-cache git python3 openssh-client && \
 	python3 -m ensurepip && \
     pip3 install --upgrade pip && \
     pip3 install --upgrade --user awsebcli && \
